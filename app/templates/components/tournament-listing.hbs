@@ -1,0 +1,37 @@
+<article class="listing">
+	<div class="panel panel-primary">
+	  <div class="panel-heading">
+	    <h4 class="panel-title">{{tournament.title}}</h4>
+	  </div>
+	  <div class="panel-body">
+
+
+	   <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
+				    <img src="{{tournament.image}}" alt="">
+				    <small>View Larger</small>
+	    </a>
+		
+		<p><b><span>Date:</span></b> {{tournament.date}}</p>
+	    <p><b><span>Location:</span></b> {{tournament.location}}</p>	    
+	    <p><b><span>Divisions:</span></b> {{tournament.divisions}}</p>
+	    
+	  </div>
+	</div>
+</article>	
+
+
+		    {{!-- <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
+			    <img src="{{tournament.image}}" alt="">
+			    <small>View Larger</small>
+		    </a>
+			    <h4>{{tournament.title}}</h4>
+			    <div class="detail owner">
+			      <span>Divisions:</span> {{tournament.divisions}}
+			    </div>
+			    <div class="detail type">
+			      <span>Location:</span> {{tournament.location}}
+			    </div>
+			    <div class="detail location">
+			      <span>Date:</span> {{tournament.date}}
+			    </div> --}}
+		    
